@@ -1,0 +1,89 @@
+.slider{
+    background: url(../img/bg2.png) top left / cover no-repeat;
+    padding: 52px 0px 53px 0px;
+    
+    @media(max-width: 998px){
+padding: 30px 0;
+    }
+    &__container{
+        @media(max-width: 1170px){
+            padding: 0 10px;
+        }
+    }
+    &__nav{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 20px 0px 0 0;
+        padding-left: 30%;
+        font-family: 'Prata';
+        font-size: 12px;
+    }
+    .swiper-slide{
+        display: flex;
+        @media(max-width: 1170px){
+            padding: 0 10px;
+        }
+    }
+    &__btn{
+        transition: transform 0.2s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.slide{
+   
+    &__image{
+        max-width: 520px;
+        @media(max-width: 998px){
+            max-width: 440px;
+        }
+        @media(max-width: 768px){
+            max-width: 300px;
+        }
+        @media(max-width: 639px){
+            display: none;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    &__description{
+        margin-left: 70px;
+        max-width: 376px;
+        @media(max-width: 1170px){
+            margin-left: calc(20px + (70 - 20) * ((100vw - 768px) / (1170 - 768)));
+        }
+        @media(max-width: 998px){
+            max-width: 300px;
+        }
+        @media(max-width: 768px){
+            margin-left: 20px;
+        }
+        @media(max-width: 639px){
+            max-width: none;
+        }
+    }
+  
+    p{
+        margin: 38px 0px 45px 0px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #444240;
+        @media(max-width: 998px){
+            font-size: 14px;
+        }
+        @media(max-width: 639px){
+            margin: 20px 0;
+        }
+    }
+    button{
+        background: #D4B098;
+        transition: background 0.2s;
+        &:hover{
+            background: #b89a86;
+        }
+    }
+}

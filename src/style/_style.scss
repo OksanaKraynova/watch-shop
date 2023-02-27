@@ -1,0 +1,41 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #FDFDFB;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    @media(max-width: 1190px){
+        padding:  0 10px;
+    }
+}
+.playfair{
+    font-family: 'Playfair Display', sans-serif;
+}
+.prata{
+    font-family: 'Prata', sans-serif;
+}
+.btn{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0 38px;
+    color: #FFFFFF;
+}
+.title{
+    font-size: 32px;
+    line-height: 1.3;
+    color: #1B1A17;
+    @media(max-width: 1170px){
+        font-size: calc(24px + (32 - 24) * ((100vw - 768px) / (1170 - 768)));
+    }
+    @media(max-width: 768px){
+        font-size: 24px;
+}
+}

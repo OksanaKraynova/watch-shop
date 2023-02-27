@@ -1,0 +1,157 @@
+.promo{
+    background: url(../img/bg.png) top left 40% / contain no-repeat;
+    max-height: 768px;
+    @media(max-width: 1349px){
+background-size: cover;
+    }
+    @media(max-width: 449px){
+background-position-x:  left ;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 449px){
+height: 300px;
+        }
+    }
+    &__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 134px;
+        @media(max-width: 1170px){
+            margin-right: calc(70px + (134 - 70) * ((100vw - 768px) / (1170 - 768))); 
+        }
+        @media(max-width: 768px){
+            margin-right: 70px; 
+        }
+        @media(max-width: 649px){
+            margin-right: 10px; 
+        }
+        @media(max-width: 449px){
+            margin-right: 0;
+            flex: 1 1 100%;
+        }
+    }
+    &__title{
+        font-size: 45px;
+        line-height: 60px;
+        color: #1B1A17;
+        display: flex;
+        flex-direction: column;
+       position: relative;
+       @media(max-width: 1170px){
+        font-size: calc(30px + (45 - 30) * ((100vw - 768px) / (1170 - 768)));
+       }
+       @media(max-width: 768px){
+        font-size: 30px;
+        line-height: 1.2;
+       }
+       &:before{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 50px;
+        background-color: #8B8371;
+        left: -65px;
+        top: 34px;
+        @media(max-width: 998px){
+display: none;
+        }
+       }
+        span{
+            font-size: 30px;
+            line-height: 40px;
+            @media(max-width: 1170px){
+                font-size: calc(20px + (30 - 20) * ((100vw - 768px) / (1170 - 768)));
+               }
+               @media(max-width: 768px){
+                font-size: 20px;
+                line-height: 1;
+               }
+        }
+    }
+    &__watch{
+        max-height: 768px;
+        position: relative;
+        overflow: visible;
+        font-family: 'Prata', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1B1A17;
+        @media(max-width: 449px){
+            display: none;
+        }
+       img{
+            height: 774px;
+            @media(max-width: 1170px){
+                height: 550px;
+            }
+            @media(max-width: 998px){
+                height: 400px;
+            }
+            @media(max-width: 768px){
+                height: 270px;
+            }
+        }      
+    }
+     &__price{
+            position: absolute;
+            top: 130px;
+            left: -80px;
+            @media(max-width: 768px){
+                display: none;
+            }
+            &:before{
+                content: '';
+                height: 1px;
+                width: 50px;
+                background-color: #8B8371;
+                position: absolute;
+                right: -65px;
+                top: 9px;
+            }
+        }
+        &__long{
+            position: absolute;
+            bottom: 116px;
+            right: -80px;
+            @media(max-width: 768px){
+                display: none;
+            }
+            &:before{
+                content: '';
+                height: 1px;
+                width: 50px;
+                background-color: #8B8371;
+                position: absolute;
+                left: -65px;
+                top: 9px;
+            }
+        }
+    p{
+        color: rgba(27, 26, 23, 0.82);
+        margin: 39px 0px 64px 0px;
+        max-width: 266px;
+        @media(max-width: 1170px){
+            margin-top: calc(24px + (39 - 24) * ((100vw - 768px) / (1170 - 768)));
+            margin-bottom: calc(35px + (64 - 35) * ((100vw - 768px) / (1170 - 768)));
+        }
+        @media(max-width: 768px){
+margin-top: 24px;
+margin-bottom: 35px;
+        }
+        @media(max-width: 449px){
+            max-width: none;
+        }
+    }
+    button{
+        background: #444240;
+        max-width: 205px;
+        transition: background 0.2s ;
+        &:hover{
+            background: #1e1d1c;
+        }
+    }
+}
